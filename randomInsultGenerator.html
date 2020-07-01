@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Random Insult Generator</h1>
+
+	<script type="text/javascript">
+		let randomInsult = () => {
+			let randomBodyParts = ['Face', 'Nose', 'Hair'];
+			let randomAdjectives = ['Smelly', 'Boring', 'Stupid'];
+			let randomWords = ['Fly', 'Stick', 'Monkey', 'Rat'];
+
+
+			//join all the random string into a santance
+			let randomString = `Your ${pickRandomWord(randomBodyParts)} is like a ${pickRandomWord(randomAdjectives)} ${pickRandomWord(randomWords)}`;
+
+			return randomString;
+		};
+
+		let pickRandomWord = words => {
+			return words[Math.floor(Math.random() * words.length)];
+		}
+
+
+	</script>
+
+</body>
+</html>

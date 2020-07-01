@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Programming challanged</title>
+</head>
+<body>
+	<h1>chap 9: Programming challange 1</h1>
+
+
+	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+	<script type="text/javascript">
+		let friends = ["Raja Babu", "Gulab", "Guljar", "Aftab"];
+		$("h1").text("my friends")
+		for(let i = 0; i < friends.length; i++ ) {
+			$("body").append("<p> nice to see you " + friends[i] + "</p>");
+		}
+			$("p").append(" smells!");
+			$("h1").fadeTo(2000, 0.1);
+			// let period = 500;
+			// for(i = 0; i < 20; i++){
+			// 	$("h1").fadeOut(period).fadeIn(period+1000);
+			// 	period += 500;
+			// }
+
+	</script>
+</body>
+</html>

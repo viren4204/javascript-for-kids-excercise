@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interacitve programming</title>
+</head>
+<body>
+	<h1>Set timeout method</h1>
+
+	<script type="text/javascript">
+		let counter = 5;
+		let printMessage = function(){
+			console.log("YOu have been starting at your console for " + counter + " seconds.");
+			counter+= 5;
+		};
+
+		let intervalId = setInterval(printMessage, 5000);
+	</script>
+</body>
+</html>

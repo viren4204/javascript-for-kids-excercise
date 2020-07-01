@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation with jQuerry</title>
+</head>
+<body>
+	<h1 id="heading">Animation with jQuerry	</h1>
+
+	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+	<script type="text/javascript">
+		let clickHandler = event => console.log("Click! " + event.pageX + " " + event.pageY);
+
+		$("h1").click(clickHandler);
+	</script>
+</body>
+</html>
